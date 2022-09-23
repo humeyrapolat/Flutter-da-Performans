@@ -58,6 +58,9 @@ Not : Yazının geri kalanında test ettiğim ve tablolarla ilişkilendirdiğim 
 
 İlk öncelikle WebP uzantısına sahip 40 × 27 , 400 × 267 ve 4096 × 2731 fotoğrafların yüklenme hızlarını inceleyelim:
 
+1. 40 × 27 boyutundaki fotoğrafın  yüklenme hızı :
+
+
 
 
 
