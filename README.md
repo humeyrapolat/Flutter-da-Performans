@@ -99,7 +99,7 @@ ve son olarak aynı boyuttaki farklı uzantıdaki fotoğrafların kapladıkları
 
 3. 4096 × 2731 boyutundaki fotoğrafın yüklenme hızı :
 
-![image](https://user-images.githubusercontent.com/71139790/191955901-b62f2843-0445-4518-9efc-e83e5f339f9d.png)
+![image](https://user-images.githubusercontent.com/71139790/191966651-8322c60b-9213-4ac6-ba55-4c371d305680.png)
 
 Profile modunda çalıştırdığım uygulamamda tracingleri ölçümledim ve fotoğrafların uzantısı aynı kaldığı takdirde üç uzantı (jpg, png, webp) için şunu söyleyebilirim; fotoğrafların boyutları uzantısı ne olursa olsun arttıkça yüklenme süresi uzuyor. Küçük boyutlarda fotoğraf kullanmanın önemi gözle görülebilir oluyor. Daha detaylı anlatım yapabilmek açısında yukarıdaki görsellerde summary kısımlarını tablolaştırılmış şekilde sizlere anlatacağım.
 
@@ -109,7 +109,8 @@ Yukarıdaki tabloda gördüğünüz üzere farklı üç boyuttaki fotoğraflar i
 
 Şimdi ise uygulamanın performansını arttırmak açısında önemli olan bir diğer konumuz olan fotoğrafların uzantılarına göre kapladıkları alanları inceleyelim. 
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/71139790/191966803-a832ab19-fbf6-4d39-81ab-93185c050824.png)
+
 
 Yukarıdaki tabloya baktığımız zaman üç farklı fotoğraf boyutu için üç farklı uzantının uygulama içinde ne kadar yer kapladığını görebiliyoruz. JPEG ve PNG uzantılı fotoğrafların kapladığı alanın tartışmasız çok fazla olduğunu söylemek mümkün. 40 × 27 boyutundaki sütuna baktığımız zaman bile WEbP uzantılı bir fotoğrafın diğer iki uzantıdaki fotoğraftan neredeyse on kat daha az yer kapladığını gözlemliyoruz. Bu veriler tek bir görsel için bu kadar fark yaratırken uygulamamız büyüdükçe kullandığımız fotoğraf boyutu ve uzantısına göre alandan 3 ila 10 kat arası tasarruf sağlayabiliriz. 
 
