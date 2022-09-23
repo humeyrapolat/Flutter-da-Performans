@@ -56,7 +56,7 @@ aynı boyutta ama farklı uzantıdaki görsellerin yüklenme hızı
 ve son olarak aynı boyuttaki farklı uzantıdaki fotoğrafların kapladıkları alanın kb cinsinden değeri
 Not : Yazının geri kalanında test ettiğim ve tablolarla ilişkilendirdiğim üç fotoğraf formatından JPEG, PNG ve WebP formatı için şu bilgiler göz önüne alınmalıdır. PNG formatı JPEG’in 50 kat, WebP ise PNG’nin 50 kat sıkıştırılmasıyla oluşturulmuştur.
 
-İlk öncelikle WebP uzantısına sahip 40 × 27 , 400 × 267 ve 4096 × 2731 fotoğrafların yüklenme hızlarını inceleyelim:
+**İlk öncelikle WebP uzantısına sahip 40 × 27 , 400 × 267 ve 4096 × 2731 fotoğrafların yüklenme hızlarını inceleyelim:**
 
 1. 40 × 27 boyutundaki fotoğrafın  yüklenme hızı :
 
@@ -70,7 +70,7 @@ Not : Yazının geri kalanında test ettiğim ve tablolarla ilişkilendirdiğim 
 
 ![image](https://user-images.githubusercontent.com/71139790/191955219-135bb6ee-e4f4-4d67-90cc-d113c57ecc80.png)
 
-**Şimdi aynı boyutlarda PNG uzantılı fotoğrafları inceleyelim : **
+**Şimdi aynı boyutlarda PNG uzantılı fotoğrafları inceleyelim :**
 
 1. 40 × 27 boyutundaki fotoğrafın  yüklenme hızı :
 
@@ -85,7 +85,7 @@ Not : Yazının geri kalanında test ettiğim ve tablolarla ilişkilendirdiğim 
 
 ![image](https://user-images.githubusercontent.com/71139790/191955716-cd705327-500e-49e5-afc1-03415ac352d7.png)
 
-**Son olarak da aynı boyuttaki fotoğrafları JPEG formatında **
+**Son olarak da aynı boyuttaki fotoğrafları JPEG formatında fotoğrafları inceleyelim**
 
 1. 40 × 27 boyutundaki fotoğrafın  yüklenme hızı :
 ![image](https://user-images.githubusercontent.com/71139790/191955760-ab47bf26-2283-463c-9798-b82a5282f5e5.png)
