@@ -2,6 +2,8 @@
 
 ## FLUTTER’ DA PERFORMANS (PERFORMANCE IN FLUTTER)
 
+This site was built using [Medium](https://medium.com/@humeyraapolat/flutter-da-performans-performance-in-flutter-308454cb2f33).
+
 Bir uygulama geliştirici olduğunuzu ve en iyi özelliklerle, harika animasyonlarla en mükemmel uygulamayı geliştirdiğinizi düşünün. Bu harika bir şey olurdu değil mi ? Bu sorunun cevabı uygulamanın performansı iyiyse tabi ki evet olacaktır ancak uygulama gereken performansı sağlayamıyorsa tüm güzel özellikleri boşuna olacak olacak ve düşük performans uygulamanın değerini çok fazla düşürecektir.
 
 Flutter geliştirmede yeniyseniz Flutter gerçekten performans sağlama açısından iyi ve hızlıdır, eğer Flutter’ın sınırlarını çok fazla zorlamazsanız ve kompleks hatalar ile uygulamayı boğmazsanız, uygulamanız gereken maksimum performansı size sağlayacaktır.
@@ -45,7 +47,7 @@ Performans geliştirmesini dört ana başlık halinde bölebiliriz. Bunlar sıra
 
 **Flutter Performans Profili Oluşturma (Flutter Performance Profiling) Nedir ?**
 
-Flutter Profiling yaparken dikkat etmemiz gereken iki önemli özellik vardır.Bunlardan ilki uygulamanın debug modda asla profile olarak çalıştırılmamasıdır çünkü debug mode production moddan daha yavaş çalışır ve size gerçek performansı vermez. İkinci olarak ise uygulamayı emülatörde çalıştırmaktan kaçınılması gerektiğidir ve yine gerçek performansı sağlamaz. Do it profiling in profile mode and do it on the real device.
+Flutter Profiling yaparken dikkat etmemiz gereken iki önemli özellik vardır.Bunlardan ilki uygulamanın debug modda asla profile olarak çalıştırılmamasıdır çünkü debug mode production moddan daha yavaş çalışır ve size gerçek performansı vermez. İkinci olarak ise uygulamayı emülatörde çalıştırmaktan kaçınılması gerektiğidir ve yine gerçek performansı sağlamaz. *Do it profiling in profile mode and do it on the real device.*
 
 **Kullanılan fotoğrafın uzantısına ve boyutuna göre performans ölçümü ve uygulama üzerindeki etkisi ?**
 
@@ -54,7 +56,7 @@ Bu durumu beraber gözlemleyeceğiz .Uygulayacağım aşamaları şu şekilde pa
 aynı uzantıda ama farklı boyuttaki görsellerin yüklenme hızı; bunları da jpg, png ve webp olarak üçe ayırdım kendi içlerinde karşılaştırma yapmak için.
 aynı boyutta ama farklı uzantıdaki görsellerin yüklenme hızı
 ve son olarak aynı boyuttaki farklı uzantıdaki fotoğrafların kapladıkları alanın kb cinsinden değeri
-Not : Yazının geri kalanında test ettiğim ve tablolarla ilişkilendirdiğim üç fotoğraf formatından JPEG, PNG ve WebP formatı için şu bilgiler göz önüne alınmalıdır. PNG formatı JPEG’in 50 kat, WebP ise PNG’nin 50 kat sıkıştırılmasıyla oluşturulmuştur.
+*Not : Yazının geri kalanında test ettiğim ve tablolarla ilişkilendirdiğim üç fotoğraf formatından JPEG, PNG ve WebP formatı için şu bilgiler göz önüne alınmalıdır. PNG formatı JPEG’in 50 kat, WebP ise PNG’nin 50 kat sıkıştırılmasıyla oluşturulmuştur.*
 
 **İlk öncelikle WebP uzantısına sahip 40 × 27 , 400 × 267 ve 4096 × 2731 fotoğrafların yüklenme hızlarını inceleyelim:**
 
