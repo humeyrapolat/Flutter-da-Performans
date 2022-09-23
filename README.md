@@ -60,6 +60,70 @@ Not : Yazının geri kalanında test ettiğim ve tablolarla ilişkilendirdiğim 
 
 1. 40 × 27 boyutundaki fotoğrafın  yüklenme hızı :
 
+![image](https://user-images.githubusercontent.com/71139790/191954895-9b22d189-6458-4f0d-aa7d-b7dd71ef561b.png)
+
+2. 400 × 267 boyutundaki fotoğrafın yüklenme hızı :
+
+![image](https://user-images.githubusercontent.com/71139790/191955151-12e7da9f-70b6-4277-9734-126a251dbec8.png)
+
+3. 4096 × 2731 boyutundaki fotoğrafın yüklenme hızı :
+
+![image](https://user-images.githubusercontent.com/71139790/191955219-135bb6ee-e4f4-4d67-90cc-d113c57ecc80.png)
+
+**Şimdi aynı boyutlarda PNG uzantılı fotoğrafları inceleyelim : **
+
+1. 40 × 27 boyutundaki fotoğrafın  yüklenme hızı :
+
+![image](https://user-images.githubusercontent.com/71139790/191955441-be20a602-6020-4e87-82be-a0fb8a846c67.png)
+
+
+2. 400 × 267 boyutundaki fotoğrafın yüklenme hızı :
+
+![image](https://user-images.githubusercontent.com/71139790/191955536-c58f2e58-92c6-4f18-935d-fd406d758b92.png)
+
+3. 4096 × 2731 boyutundaki fotoğrafın yüklenme hızı :
+
+![image](https://user-images.githubusercontent.com/71139790/191955716-cd705327-500e-49e5-afc1-03415ac352d7.png)
+
+**Son olarak da aynı boyuttaki fotoğrafları JPEG formatında **
+
+1. 40 × 27 boyutundaki fotoğrafın  yüklenme hızı :
+![image](https://user-images.githubusercontent.com/71139790/191955760-ab47bf26-2283-463c-9798-b82a5282f5e5.png)
+
+
+2. 400 × 267 boyutundaki fotoğrafın yüklenme hızı :
+
+![image](https://user-images.githubusercontent.com/71139790/191955809-6e354602-c9f9-42f0-abe5-9fa1f5c48dee.png)
+
+3. 4096 × 2731 boyutundaki fotoğrafın yüklenme hızı :
+
+![image](https://user-images.githubusercontent.com/71139790/191955901-b62f2843-0445-4518-9efc-e83e5f339f9d.png)
+
+Profile modunda çalıştırdığım uygulamamda tracingleri ölçümledim ve fotoğrafların uzantısı aynı kaldığı takdirde üç uzantı (jpg, png, webp) için şunu söyleyebilirim; fotoğrafların boyutları uzantısı ne olursa olsun arttıkça yüklenme süresi uzuyor. Küçük boyutlarda fotoğraf kullanmanın önemi gözle görülebilir oluyor. Daha detaylı anlatım yapabilmek açısında yukarıdaki görsellerde summary kısımlarını tablolaştırılmış şekilde sizlere anlatacağım.
+
+![image](https://user-images.githubusercontent.com/71139790/191955946-e85dc5db-4192-42fc-8551-b0238e8cc0dd.png)
+
+Yukarıdaki tabloda gördüğünüz üzere farklı üç boyuttaki fotoğraflar için en etkili fotoğraf uzantı boyutunun Webp olduğunu gözlemledik. Tabloyu dikkatli bir şekilde incelerseniz eğer fotoğraf 40 × 27 gibi küçük boyutta olduğu zaman PNG veya WebP kullanmak birbirine çok yakın iki seçenek gibi gözükse bile fotoğraf boyutunu her kenardan 10 kat arttırdığımız zaman WebP uzantılı fotoğraf kullanmak bize 20 kat oranda hız kazandırıyor ve fotoğrafın boyutunu 4096 × 2731 gibi çok büyük bir boyuta ayarlarsa ise bize ortalama 40 kat daha hızlı bir dönüş sağlıyor. Tabloda inceleyeceğimiz bir diğer durum ise JPEG formatının PNG formatıyla olan karşılaştırmasıdır. JPEG uzantısı küçük fotoğraf karelerinde daha yavaş sonuç verirler fotoğraf büyüdükçe uygulamayı yavaşlatmaya başladığını görebiliyoruz. Son olarak şu sonuca varıyoruz ki uygulamanın performansı sadece istenilen fonksiyonları tamamlaması olarak ölçülmediği gibi yavaş bir arayüzün kullanıcıyı da sıkacağını göz önüne alırsak WebP uzantısı ile uygulamanın hız açısından  performansını maksimize edebiliriz. 
+
+Şimdi ise uygulamanın performansını arttırmak açısında önemli olan bir diğer konumuz olan fotoğrafların uzantılarına göre kapladıkları alanları inceleyelim. 
+
+![Uploading image.png…]()
+
+Yukarıdaki tabloya baktığımız zaman üç farklı fotoğraf boyutu için üç farklı uzantının uygulama içinde ne kadar yer kapladığını görebiliyoruz. JPEG ve PNG uzantılı fotoğrafların kapladığı alanın tartışmasız çok fazla olduğunu söylemek mümkün. 40 × 27 boyutundaki sütuna baktığımız zaman bile WEbP uzantılı bir fotoğrafın diğer iki uzantıdaki fotoğraftan neredeyse on kat daha az yer kapladığını gözlemliyoruz. Bu veriler tek bir görsel için bu kadar fark yaratırken uygulamamız büyüdükçe kullandığımız fotoğraf boyutu ve uzantısına göre alandan 3 ila 10 kat arası tasarruf sağlayabiliriz. 
+
+Fotoğrafın kapladığı alan ve yüklenme süresi(tracing) beraber göz önüne alındığı zaman şu sonuca ulaşırız : kullanılacak fotoğrafın uzantısı ne olursa olsun boyutu küçüldükçe hem kapladığı alan hem de yüklenmesi için gereken süre azalıyor. Uygulamanın performansını hem hız hem de boyut (kapladığı alan) maksimize etmek istediğimizde kullanılan fotoğrafların formatlarını WebP uzantısına çevirerek hem hız konusunda  hem de alanda tasarruf sağlarız. 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
